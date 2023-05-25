@@ -68,7 +68,7 @@ const loginUser = async (req, res, next) => {
 
         const token = await getJwtToken(user?.id);
 
-        res.status(200).json({
+        res.status(200).json({  
             token,
         });
     } catch (error) {
